@@ -1,0 +1,133 @@
+.footer__box {
+  display: flex;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: $footer-color;
+}
+
+.container.footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    //flex-grow: 1;
+  }
+ }
+
+.footer .logo {
+  display: block;
+  font-family: Raleway;
+  text-decoration: none;
+  color: $logo-color;
+  @include font(26px, 1.19, 700);
+}
+
+.footer .blue {
+  color: $accent-color;
+}
+
+.footer .white {
+  color: $main-background-color;
+}
+
+.footer__join {
+  margin-bottom: 60px;
+}
+
+.addr__nav {
+  //width: 231px;
+  height: 81px;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.addr__nav .mail {
+  display: block;
+  margin-bottom: 9px;
+  color: $primary-text-color;
+  text-decoration: none;
+  @include font(14px, 1.71);
+}
+
+.addr__nav .phone {
+  display: block;
+  color: $primary-text-color;
+  text-decoration: none;
+  @include font(14px, 1.71, 400);
+  margin-bottom: 9px;
+}
+
+.addr__nav .adress {
+  color: $main-background-color;
+  @include font(14px, 1.71);
+  margin: 0 0 9px 0;
+}
+
+.sign {
+  color: $main-background-color;
+  @include font(14px, 1.14, 700, 0.03em);
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.social__sign {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+}
+
+.footer__adress {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    text-align: left;
+  }
+}
+
+.social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer .icon__social {
+  @include flexbox(flex, $ai: center);
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer .sign__network {
+  width: 20px;
+  height: 20px;
+  color: $main-background-color;
+}

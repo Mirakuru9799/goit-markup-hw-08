@@ -1,0 +1,110 @@
+.hero__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../images/header/mobile/hero-mobile@1x.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(../images/header/mobile/hero-mobile@2x.jpg);
+  }
+  @include for-size(tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(../images/header/tablet/hero-tablet@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(../images/header/tablet/hero-tablet@2x.jpg);
+    }
+  }
+
+  @include for-size(desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(../images/header/desktop/hero-desktop@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(../images/header/desktop/hero-desktop@2x.jpg);
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include for-size(desktop) {
+    height: 600px;
+  }
+}
+
+.hero__title {
+  margin: 0 auto 30px auto;
+  color: $main-background-color;
+  //width: 696px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    @include font(26px, 1.62, 900, 0.06em);
+    justify-content: center;
+    width: 360px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    @include font(26px, 1.62, 900, 0.06em);
+    justify-content: center;
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    @include font(44px, 1.36, 900, 0.06em);
+    justify-content: center;
+    width: 696px;
+  }
+
+}
+
+.btn {
+  display: inline-block;
+  color: $main-background-color;
+  background-color: $accent-color;
+  border: none;
+  @include font(16px, 1.87, 700, 0.06em);
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+}

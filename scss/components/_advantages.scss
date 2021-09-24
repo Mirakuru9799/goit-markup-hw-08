@@ -1,0 +1,110 @@
+.features {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.features__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.features__nav li {
+  // width: 270px;
+  //margin: 0 30px 0 0;
+
+  &:last-child(1) {
+    margin: 0;
+  }
+}
+
+.features__flex .item + .item {
+  margin-right: 30px;
+}
+
+.features__nav .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $secondary-text-color;
+  @include font(14px, 1.14, 700);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+}
+
+.features__nav .text {
+  margin-top: 0;
+  color: $additional-text-color;
+  @include font(14px, 1.71);
+}
+
+.icon__before {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 1 - 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.icon__before::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $button-nav-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.antenna::before {
+  background-image: url("../images/antenna.svg");
+}
+
+.clock::before {
+  background-image: url("../images/clock.svg");
+}
+
+.diagram::before {
+  background-image: url("../images/diagram.svg");
+}
+
+.astronaut::before {
+  background-image: url("../images/astronaut.svg");
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $secondary-text-color;
+  @include font(36px, 1.17, 700);
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    @include font(28px, 1.18, 700, 0.03em);
+  }
+}

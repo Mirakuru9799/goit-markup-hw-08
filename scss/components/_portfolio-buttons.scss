@@ -1,0 +1,38 @@
+.button__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  //justify-content: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
+}
+
+.button__nav .list__nav {
+  padding: 6px 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $main-background-color;
+  }
+}
+
+.list__nav {
+  height: 38px;
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+
+  color: $secondary-text-color;
+  background-color: $button-nav-color;
+  @include font(16px, 1.62, 500);
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    margin: 8px 8px 15px 8px;
+  }
+}

@@ -1,0 +1,13 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+.page__header {
+  border-bottom: 1px solid #ececec;
+}
