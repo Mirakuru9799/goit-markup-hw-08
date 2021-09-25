@@ -1,4 +1,76 @@
 .sign__up {
+  padding-left: 0px;
+
+  @media screen and (min-width:1200px) {
+    padding-left: 93px;
+  }
+}
+
+.sign__form {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
+}
+
+.sign__form input {
+  width: 100%;
+  margin: 0;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: $footer-color;
+  color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width:768px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.sign__form .sign__up__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  color: $main-background-color;
+  background-color: $accent-color;
+  text-align: center;
+  @include font(16px, 1.87, 700, 0.06em);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  @media screen and (min-width:1200px) {
+    margin-top: 0px;
+  }
+}
+
+.sign__pic {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+/*.sign__up {
   //padding-left: 93px;
 }
 
@@ -68,4 +140,4 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+}*/
