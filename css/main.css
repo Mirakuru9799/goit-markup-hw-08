@@ -391,6 +391,12 @@ img {
   }
 }
 
+@media (min-width: 480px) {
+  .hero__box {
+    height: 400px;
+  }
+}
+
 @media (min-width: 768px) {
   .hero__box {
     height: 400px;
@@ -536,7 +542,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .icon__before {
-    margin-bottom: 30px;
     flex-basis: calc(100% / 1 - 30px);
   }
 }
@@ -1555,20 +1560,33 @@ button:focus-visible {
 }
 
 .check__form {
-  text-align: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
-  font-weight: 0.03em;
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .check__form {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check__form input {
   width: 16px;
   height: auto;
-  margin-right: 8px;
   border: 2px solid #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .check__form input {
+    margin-right: 8px;
+  }
 }
 
 .check__form .check__label input[type="checkbox"] {
@@ -1797,7 +1815,7 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1810,6 +1828,17 @@ button:focus-visible {
   .button__nav {
     justify-content: center;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .button__nav {
+    margin-bottom: 50px;
+  }
+}
+
+.btn__list__nav {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .button__nav .list__nav {
@@ -1836,9 +1865,18 @@ button:focus-visible {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .list__nav {
-    margin: 8px 8px 15px 8px;
-  }
+.list__nav__btn {
+  height: 38px;
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #f5f4fa;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */

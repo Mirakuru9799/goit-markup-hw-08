@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
@@ -11,6 +11,14 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.btn__list__nav {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .button__nav .list__nav {
@@ -36,6 +44,19 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) {
-    margin: 8px 8px 15px 8px;
+    //margin: 8px 8px 15px 8px;
   }
+}
+
+.list__nav__btn {
+  height: 38px;
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+
+  color: $secondary-text-color;
+  background-color: $button-nav-color;
+  @include font(16px, 1.62, 500);
+  font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

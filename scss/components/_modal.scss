@@ -167,17 +167,23 @@ button:focus-visible {
 }
 
 .check__form {
-  text-align: center;
   margin-bottom: 30px;
-  @include font(14px, 1.71, 0.03em);
+  @include font(12px, 1.17, 400, 0.03em);
   color: $additional-text-color;
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.7, 400, 0.03em);
+  }
 }
 
 .check__form input {
   width: 16px;
   height: auto;
-  margin-right: 8px;
   border: 2px solid $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+  }
 }
 
 .check__form .check__label input[type="checkbox"] {
